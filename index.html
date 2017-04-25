@@ -9,14 +9,38 @@
     <title>currencyXchange</title>
   </head>
   <body>
-    <h1>MY-ZAR</h1>
+    <div class="container">
 
-  <div class="contatiner">
+    <section>
 
+        <h1>MYMONEY</h1>
+        <p>Enter Amount</p><input type="number" min=1 name="text" value='1' id="myText" rows="2" cols="10"> 
+        <h2 id="keepTrk">
+
+        </h2>
+        <p class="choose">CUREENCIES</p>
+        <div class="radio">
+        <select class="currencies" name="">
+
+          <script  type="text/x-handlebars-some-template" id="xeTemplate">
+
+                 {{#each currencies}}
+                   <option name="xec">{{this.type}}</option>
+                {{/each}}
+               </script>
+
+        </select>
+        </div>
+
+        <h1 id="displayResults">
+
+        </h1>
+
+    </section>
   </div>
 
 
   </body>
-
+  <script src="handlebars-v4.0.5.js" charset="utf-8"></script>
   <script src="javascript/myMoney.js" charset="utf-8"></script>
 </html>
